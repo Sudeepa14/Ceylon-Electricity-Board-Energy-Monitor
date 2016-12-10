@@ -70,10 +70,6 @@
 			box-shadow: 0px 1px 10px -1px rgba(23, 23, 21, 0.38);
 
 		}
-		input:-webkit-autofill{
-			background-color: white;
-
-		}
 
 		input {
 			width: 	98%;
@@ -139,5 +135,7 @@
         </form>
     </div>
 </div>
+
+
 </body>
 </html>

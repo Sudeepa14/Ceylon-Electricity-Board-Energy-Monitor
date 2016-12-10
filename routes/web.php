@@ -18,3 +18,5 @@ Route::get('/', function () {
 //route::get('/test', testController@test_method);
 
 Route::get('/login','loginController@test_method');
+
+Route::get('/about','PagesController@about');
