@@ -12,12 +12,16 @@
 
 		body	{
 			margin: 0;
-			background-color: rgba(220, 218, 216, 0.45);
+			/*background-color: rgba(220, 218, 216, 0.45);*/
+			background-image: url(https://wings.samco.aero/Wings/img/background.jpg);
+			
+			background-size: cover;
 		}
 
 		header {
 			background-color: #696b6a;
 			overflow: hidden;
+			opacity: .6;
 		}
 
 		header nav {
@@ -30,17 +34,22 @@
 		header nav ul	{
 			text-decoration: none;
 			list-style: none;
+			margin: 0;
 		}
 		header nav ul li {
 			display: inline-block;
-			margin: 0 10px;
+			margin: 0 15px;
 		}
 
 		a {
 			text-decoration: none;
 			color: white;
 			font-family: arial;
-			padding:20px 0 ;
+			padding:20px 2px ;
+		}
+
+		a:hover {
+			background-color: rgba(64, 64, 84, 0.53);
 		}
 		h2	{
 			font-family: arial ;
@@ -57,8 +66,12 @@
 			border: 1px solid;
 			border-radius: 5px;	
 			border-color:rgb(166, 204, 184) ;
-			background-color: rgb(166, 204, 184);
+			background-color: rgba(166, 204, 190, 0.29);
 			box-shadow: 0px 1px 10px -1px rgba(23, 23, 21, 0.38);
+
+		}
+		input:-webkit-autofill{
+			background-color: white;
 
 		}
 
@@ -70,6 +83,8 @@
 			padding-left: 2%;  
 			font-size: 	15px;
 			margin-bottom: 10px;
+			background-color: rgba(155, 146, 234, 0.3);
+;
 			
 			
 
@@ -78,7 +93,7 @@
 			width: 100%;
 			padding:0;
 			margin-top: 10px;
-			background-color:  rgba(96, 98, 113, 0.59);
+			background-color:  rgba(96, 98, 113, 1);
 		}
 
 		input[type="checkbox"]{
