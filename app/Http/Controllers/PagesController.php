@@ -6,7 +6,12 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+
+	
+
     public function about(){
-    	return("this is about page");
+    	$name = "<span style ='color:red;'>Darshana buddhika</span>";
+
+    	return view("about")->with("name", $name);
     }
 }
