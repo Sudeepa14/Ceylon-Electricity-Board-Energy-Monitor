@@ -9,19 +9,13 @@
 
 <header>
 	<div class="wrapper">
-		<nav>
-			<ul>
-				<li><a href="login">Login</a></li>
-				<li><a href="">Register</a></li>
-				<li><a href="about">About us</a></li>
-				<li><a href="">Contact us</a></li>
 
-			</ul>
+        @yield('header')
+
 		</nav>
 	</div>
 </header>
 <div class="wrapper">
-
 
 		@yield('content')
 
@@ -33,7 +27,7 @@
     <nav>
         <ul>
             <li><a href="login">Login</a></li>
-            <li><a href="">Register</a></li>
+            <li><a href="register">Register</a></li>
             <li><a href="about">About us</a></li>
             <li><a href="">Contact us</a></li>
 

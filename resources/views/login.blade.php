@@ -1,11 +1,24 @@
 
 @extends('masterPage')
 
+@section('header')
+    <nav>
+        <ul>
+            <li><a href="login">Login</a></li>
+            <li><a href="">Register</a></li>
+            <li><a href="about">About us</a></li>
+            <li><a href="">Contact us</a></li>
+
+        </ul>
+
+@stop
+
 @section('content')
 
-    <div class="form">
+    <div class="form_wrapper">
     <h2>Login from here</h2>
-        <form action="">
+        <form action=userLogin method='post'>
+            {{ csrf_field() }}
             <input type="text" name="username" placeholder="Enter Username" required="Username is required">
             <input type="password" name="password" placeholder="Enter Password" required="Password is required">
             <input type="submit" name="submit" value="Login">

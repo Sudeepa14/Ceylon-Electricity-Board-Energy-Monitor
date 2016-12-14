@@ -17,6 +17,14 @@ Route::get('/', function () {
 
 //route::get('/test', testController@test_method);
 
-Route::get('/login','loginController@test_method');
+Route::get('/login','PagesController@login')->name('login');
 
 Route::get('/about','PagesController@about');
+
+Route::get('/register','PagesController@register');
+
+Route::post('/submit','UserController@Register');
+
+Route::post('/userLogin','UserController@login');
+
+Route::get('/dashboard','PagesController@dashboard')->name('dashboard');
